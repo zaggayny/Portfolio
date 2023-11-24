@@ -1,0 +1,450 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{  
+   background-color:#1e1e1e;
+   height: 100vh;
+}
+
+.container-nav{ 
+    justify-content:space-between;  
+    align-items: center;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 50px;
+    background-color: #1e1e1e;
+    height: 80px;
+    
+    
+}
+
+.container-nav h2{
+    font-size: 40px;
+    color: rgb(223, 115, 0);
+    font-weight: 600;
+    margin-right: auto; 
+    transition: 0.6s ease;
+    animation-name: Animacion2;
+    animation-duration: 4s;
+    animation-iteration-count:infinite ;
+}
+
+
+@keyframes Animacion2{
+    0%{color: #ccc;}
+    
+    50%{color: #e69743;}
+   
+    100%{color:#ccc;}
+}
+  
+
+
+.container-nav ul{
+    display: flex;
+    cursor: pointer;
+    margin-right: 300px;
+    gap: 10px;
+}
+.container-nav ul li{
+list-style: none; 
+ 
+}
+.container-nav ul li a{
+    text-decoration: none;
+    position: relative;
+     color:#fff;
+     font-size: 16px;
+     margin-right: 25px;
+     transition: color 0.6s ease;
+}
+.container-nav ul li:hover a{
+    color: rgb(223, 115, 0);
+
+}
+.container-nav ul li:last-child a{
+margin: 0;
+}
+.hire-btn{
+    margin: 0;
+    background-color:  rgb(223, 115, 0);
+    padding: 6px 20px;
+    border:none ;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.6s ease;
+}
+.hire-btn:hover{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    border: solid 1px rgb(223, 115, 0);
+    color: white;
+    transition: 0.7s;
+}
+.container-nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(223, 115, 0);
+    bottom: 0;
+    left: 0;
+    transition: width 0.6s ease; 
+}
+
+.container-nav ul li:hover a::after {
+    width: 100%;
+}
+
+ .main{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 640px;
+   
+}
+.main h4{
+    font-size: 32px;
+    font-weight: 600px;
+}
+
+
+.main h4 span {
+    color: #df7300;
+    text-decoration: underline;
+    
+}
+.main  .title {
+    -webkit-text-stroke:#df7300 2px;
+    animation-name:animacion3 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacion3{
+    
+    25%{ -webkit-text-stroke:#e69743 2px;}
+    50%{ -webkit-text-stroke:#df7300 2px;}
+    75%{ -webkit-text-stroke:#e69743 2px;}
+    
+
+}
+.main p.title{
+    font-size: 44px;
+    font-weight: 600px;
+    color: #fff;
+    margin-top: 8px;
+}
+.main p.subtitle{
+    font-size: 16px;
+    margin-top: 6px;
+    color: #ccc;
+
+}
+
+      
+.guarante{
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap:25px;
+    width: 100%;
+}
+.guarante .item{
+    font-family: 'Poppins', sans-serif;
+    background-color: #252424;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px 30px;
+    border: 1px solid transparent;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.guarante .item:hover{
+    border-color: #df7300;
+}
+.guarante .item .icon{
+    width: 46px;
+    height: 46px;
+    background:#fff;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.guarante .item .icon:hover{
+    background-color: #df7300;
+}
+
+.guarante .item .icon i{
+    font-size: 30px;
+}
+.guarante .item .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guarante .item .info h3{
+    color: #df7300;
+    font-size: 30px;
+}
+.guarante .item .info p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600px;
+}
+.guarante .item > i{
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+.guarante .item:hover  > i{
+    color: #df7300;
+}
+
+.seprator{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 50px  ;
+    margin-left: 80px;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #df7300;
+    border-radius: 10px;
+    background-color: #252424;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:60px;
+    padding: 0px 80px;
+}
+.about .infoo h3{
+    color: #df7300;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.about .infoo p{
+    color: #ccc;
+    font-size: 14px;
+    margin-left: 10px;
+
+}
+
+.about img{
+    width: 280px;
+    border-radius: 10px;
+    margin-left: 0px;
+    transition: 1s;
+    border: solid 2px #353232;
+}
+.about img:hover{
+    transform: scale(1.04);
+}
+
+
+.skills{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    margin: 30px 50px;
+}
+.skills .left{
+width: 680px;
+}
+.skills .left .info h3{
+    color:#ccc;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.skills .left .info p{
+    color: #ccc;
+    font-size: 14px;
+}
+.skills .left button{
+    margin-top: 30px;
+}
+.skills .right{
+    width: 420px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    transition: 2s;
+}
+.skills .right:hover{
+    transform: scale(1.2);
+}
+
+.skills .right .items{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #252424;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+}
+.skills .right .items i{
+    font-size: 34px;
+    color: #ccc;
+}
+footer{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-color: #252424;
+    padding: 80px 50px 40px ;
+    margin-top: 100px;
+}
+footer .start{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #df7300;
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 70%;
+    top: -16%;
+    left: 15%;
+    animation-name: Animacion;
+animation-duration: 4s;
+animation-iteration-count:infinite ;
+}
+@keyframes Animacion{
+    0%{background-color: #ccc;}
+    
+    50%{background-color: #df7300;}
+   
+    100%{background-color:#ccc;}
+}
+
+footer .start p{
+    font-size: 13px;
+    width: 35%;
+}
+footer .start button{
+    background:transparent;
+    border:solid 1px #000;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+footer .start button:hover{
+    background-color: #fff;
+    border-color: #fff;
+}
+footer .cols{
+    display: flex;
+    align-items: start;
+}
+footer .cols .about-cols{
+    flex: 3;
+}
+footer .cols .about-cols h3{
+    color: #df7300;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+footer .cols .about-cols h3:hover{
+color: #252424;
+-webkit-text-stroke: 0.2px  rgb(223, 115, 0) ;
+cursor: default;
+}
+footer .cols .about-cols p{
+    color: #ccc;
+    font-size: 13px;
+}
+footer .cols .links-col{
+    flex: 3;
+}
+footer .cols .links-col a i{
+    margin: 4px;
+}
+footer .cols .links-col h4, footer .cols .news-col h4{
+    color: #ccc;
+    margin-bottom: 20px;
+}
+footer .cols .links-col a{
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 26px;
+    transition:color 0.3s ease;
+}
+footer .cols .links-col:hover{
+    color: #df7300;
+}
+footer .cols .news-col{
+    flex:3;
+}
+footer .cols  p{
+    color: #ffffff;
+    font-size:20px;
+}
+footer .cols .news-col form{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+footer .cols .news-col form input{
+    width: 100%;
+    background: #252424;
+    border: none;
+    padding: 13px;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size:13px ;
+}
+footer .cols .news-col form button{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e69743;
+    border: none;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+footer .cols .news-col form button:hover{
+    background-color: #df7300;
+}
+footer .cols .news-col form button i{
+    font-size: 26px;
+}
+
+
+/*-----------↓↓↓↓↓↓↓↓↓RESPONSIVE↓↓↓↓↓↓↓↓↓-----------*/
+
+@media screen and (max-width: 1100px) {
+
+
+
+
+}
